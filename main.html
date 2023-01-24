@@ -10,47 +10,57 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<div class="container">
-		<div class="d-flex justify-content">
+		<div class="d-flex justify-content p-3">
 			<h1>Internship Form</h1>
 		</div>
-		<form class="inter-form" action="#" method="post">
-			<div>
-				<label for="first-name-input">First Name</label>
-				<input id="first-name-input" type="text" required>
+		<form class="row g-3 needs-validation" novalidate>
+			<div class="col-md-4">
+				<label for="first-name-input" class="form-label">First Name</label>
+				<input class="form-control" id="first-name-input" type="text" required>
+				<div class="invalid-feedback">First name required</div>
 			</div>
-			<div>
-				<label for="last-name-input">Last Name</label>
-				<input id="last-name-input" type="text" required>
+			<div class="col-md-4">
+				<label for="last-name-input" class="form-label">Last Name</label>
+				<input class="form-control" id="last-name-input" type="text" required>
+				<div class="invalid-feedback">Last name required</div>
 			</div>
-			<div>
-				<label for="email-input">Email Address</label>
-				<input id="email-input" type="email" required>
+			<div class="col-md-4"> 
+				<label for="email-input" class="form-label">Email Address</label>
+				<div class="input-group has-validation">
+					<input class="form-control" id="email-input" type="email" aria-describedby="inputGroupPrepend" required>
+					<div class="invalid-feedback">Email required</div>
+				</div>
 			</div>
 
-			<div>
-				<label for="college-input">College</label>
-				<input id="college-input" type="text" required>
+			<div class="col-mod-6">
+				<label for="college-input" class="form-label">College</label>
+				<input class="form-control" id="college-input" type="text" required>
+				<div class="invalid-feedback">Please provide a valid college.</div>
 			</div>
-			<div>
-				<label for="graduation-Year">Graduation Year</label>
-				<select required>
+			<div class="col-md-3">
+				<label for="grad-year-select" class="form-label">Graduation Year</label>
+				<select class="form-select" id="grad-year-select" required>
+					<option selected disabled value="">Choose...</option>
 					<option>2020</option>
 					<option>2021</option>
 					<option>2022</option>
 					<option>2023</option>
 				</select>
+			<div class="invalid-feedback">Please enter a Graduation year.</div>
 			</div>
-			<div>
-				<label for="roll-no-input">Roll No.</label>
-				<input id="roll-no-input" type="text" required>
+			<div class="col-md-3">
+				<label for="roll-no-input" class="form-label">Roll No.</label>
+				<input class="form-control" id="roll-no-input" type="text" required>
+				<div class="invalid-feedback">Please provide a Roll no.</div>
 			</div>
-			<div class="cond-submit">
-				<div class="agree-cond">
-					<input id="conditions-checkbox" type="checkbox" required>
-					<label for="conditions-checkbox">Agree to terms and conditions</label>
+			<div class="col-12">
+				<div class="form-check">
+					<input class="form-check-input" id="conditions-checkbox" type="checkbox" value="" required>
+					<label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
+					<div class="invalid-feedback">You must agree before submitting.</div>
 				</div>
-				<div>
-					<input id="" type="button" value="submit">
+				<div class="col-12">
+					<button>Submit </button>
 				</div>
 			</div>
 		</form>
