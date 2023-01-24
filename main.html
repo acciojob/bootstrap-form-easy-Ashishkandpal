@@ -11,7 +11,7 @@
 	<h1>Internship Form</h1>
 
 	<div class="container">
-		<form method="post">
+		<form class="inter-form" action="#" method="post">
 			<div>
 				<label for="first-name-input">First Name</label>
 				<input id="first-name-input" type="text" required>
@@ -42,12 +42,14 @@
 				<label for="roll-no-input">Roll No.</label>
 				<input id="roll-no-input" type="text" required>
 			</div>
-			<div>
-				<label for="conditions-checkbox">Agree to terms and conditions</label>
-				<input id="conditions-checkbox" type="checkbox" required>
-			</div>
-			<div>
-				<input id="" type="button" value="submit">
+			<div class="cond-submit">
+				<div class="agree-cond">
+					<input id="conditions-checkbox" type="checkbox" required>
+					<label for="conditions-checkbox">Agree to terms and conditions</label>
+				</div>
+				<div>
+					<input id="" type="button" value="submit">
+				</div>
 			</div>
 		</form>
 	</div>

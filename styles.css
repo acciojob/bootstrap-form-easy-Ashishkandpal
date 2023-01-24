@@ -1,2 +1,22 @@
 
 /* Your CSS Code here. */
+h1{
+	text-align: center;
+}
+
+.inter-form{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inter-form div{
+	display: flex;
+	flex-direction: column;
+	padding: 4%;
+}
+
+.cond-submit .agree-cond {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
